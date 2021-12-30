@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <!-- BoxIcons-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <title>Maebelly</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Mae</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="bx bx-home-alt nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-file nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="bx bx-image-alt nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-message-alt-detail nav__icon"></i> Contact Me
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!--theme change button -->
+          <i class="bx bxs-moon change-theme" id="theme-button"></i>
+          <!--Toggle button-->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <!-- Home -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/kayla-m-anderson/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </a>
+
+              <a
+                href="https://codepen.io/mae-cloud"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="bx bxl-codepen"></i>
+              </a>
+
+              <a
+                href="https://github.com/mae-cloud"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 479 467"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="1"
+                    y="2"
+                    href="Photo/me.png"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hi I am Mae</h1>
+              <h3 class="home__subtitle">Frontend Developer</h3>
+              <p class="home_description">
+                Eager front-end developer looking to expand my skills in various
+                projects.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="bx bx-send button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="bx bx-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll Down</span>
+              <i class="bx bx-down-arrow-alt home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle"> Hello! 👋 </span>
+        <div class="about__container container grid">
+          <img src="Photo/cat.jpeg" alt="" class="about__img" />
+          <div class="about__data">
+            <p class="about__description">
+              Web developer, new to coding. I am an aspiring front-end
+              developer. I have experience in programming languages such as
+              STATA, Javascript, and Java. I have a Bachelor of Arts degree from
+              the University of Minnesota-Twin Cities and have 4+ years
+              experience in the creative industry. In my free time, I enjoy
+              snowboarding, playing guitar, and traveling. I also speak English,
+              Spanish, and Portuguese fluently and enjoy learning languages in
+              my free time.
+            </p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">06+</span>
+                <span class="about__info-name">Months <br />experience</span>
+              </div>
+              <div>
+                <span class="about__info-title">04+</span>
+                <span class="about__info-name">Completed <br />projects</span>
+              </div>
+              <div>
+                <span class="about__info-title">02+</span>
+                <span class="about__info-name">Bootcamps <br />attended</span>
+              </div>
+            </div>
+
+            <div class="about__buttons">
+              <a
+                download=""
+                href="KaylaAndersonResume copy.pdf"
+                class="button button--flex"
+              >
+                Download CV <i class="bx bx-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">my technical level</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!--Skills 1-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="bx bx-code-curly skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__titles">Frontend Developer</h1>
+                </div>
+
+                <i class="bx bx-chevron-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">65%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills__number">35%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Java</h3>
+                    <span class="skills__number">15%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__java"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Qualification-->
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My Personal Journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div class="qualification__button button--flex">
+              <i class="bx bxs-graduation qualification__icon"></i>
+              Education
+            </div>
+
+            <div class="qualification__button button--flex">
+              <i class="bx bx-briefcase-alt-2 qualification__icon"></i>
+              Work
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--Qualification Content 1-->
+            <div class="qualification__content">
+              <!--qualifiction 1-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle"
+                    >University of Minnesota-Twin Cities</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="bx bxs-calendar"></i>
+                    2017-2020
+                  </div>
+                </div>
+              </div>
+
+              <!--qualifiction 2-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle"
+                    >University of Minnesota-Twin Cities</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="bx bxs-calendar"></i>
+                    2017-2020
+                  </div>
+                </div>
+              </div>
+
+              <!--qualifiction 3-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle"
+                    >University of Minnesota-Twin Cities</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="bx bxs-calendar"></i>
+                    2017-2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work  -->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+          <a href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work2.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work3.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work4.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work5.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work6.jpg" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input type="button" value="Send" class="contact__button button" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="footer__title">Mae</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <p class="footer__copy">:)</p>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main js -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
