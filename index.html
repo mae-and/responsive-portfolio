@@ -11,7 +11,10 @@
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
 
-    <title>Maebelly</title>
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
+
+    <title>Mae-Cloud</title>
   </head>
   <body>
     <!-- Header -->
@@ -22,7 +25,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <i class="bx bx-home-alt nav__icon"></i> Home
               </a>
             </li>
@@ -37,8 +40,8 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="bx bx-briefcase-alt nav__icon"></i> Services
+              <a href="#education" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i> Qualification
               </a>
             </li>
             <li class="nav__item">
@@ -129,10 +132,10 @@
 
             <div class="home__data">
               <h1 class="home__title">Hi I am Mae</h1>
-              <h3 class="home__subtitle">Frontend Developer</h3>
+              <h3 class="home__subtitle">Social Data Scientist</h3>
               <p class="home_description">
-                Eager front-end developer looking to expand my skills in various
-                projects.
+                Eager social data programmer looking to expand my skills in various
+                projects involving STATA, JavaScript, and Ruby on Rails.
               </p>
               <a href="#contact" class="button button--flex">
                 Contact Me <i class="bx bx-send button__icon"></i>
@@ -155,17 +158,18 @@
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle"> Hello! 👋 </span>
         <div class="about__container container grid">
-          <img src="Photo/cat.jpeg" alt="" class="about__img" />
+          <img
+            src="/Users/kaylaanderson/IMG_2039.jpeg"
+            alt=""
+            class="about__img"
+          />
           <div class="about__data">
             <p class="about__description">
-              Web developer, new to coding. I am an aspiring front-end
-              developer. I have experience in programming languages such as
-              STATA, Javascript, and Java. I have a Bachelor of Arts degree from
-              the University of Minnesota-Twin Cities and have 4+ years
-              experience in the creative industry. In my free time, I enjoy
-              snowboarding, playing guitar, and traveling. I also speak English,
-              Spanish, and Portuguese fluently and enjoy learning languages in
-              my free time.
+              My name is Kayla and I am new to coding. I am an aspiring programmer. I have experience in programming languages such as
+              STATA, Javascript, and Ruby on Rails. I have a Bachelor of Arts
+              degree from the University of Minnesota-Twin Cities and have 4+
+              years experience in the creative industry. In my free time, I
+              enjoy snowboarding, playing guitar, and learning languages. Looking to expand my knowledge and network with other programmers so feel free to reach out!
             </p>
             <div class="about__info">
               <div>
@@ -247,11 +251,11 @@
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Java</h3>
+                    <h3 class="skills__name">Ruby on Rails</h3>
                     <span class="skills__number">15%</span>
                   </div>
                   <div class="skills__bar">
-                    <span class="skills__percentage skills__java"></span>
+                    <span class="skills__percentage skills__ruby"></span>
                   </div>
                 </div>
               </div>
@@ -261,28 +265,26 @@
       </section>
 
       <!--Qualification-->
-      <section class="qualification section">
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+      <div class="qualification section">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My Personal Journey</span>
 
         <div class="qualification__container container">
           <div class="qualification__tabs">
+            <div class="qualification__button button--flex"></div>
+
             <div class="qualification__button button--flex">
               <i class="bx bxs-graduation qualification__icon"></i>
               Education
             </div>
-
-            <div class="qualification__button button--flex">
-              <i class="bx bx-briefcase-alt-2 qualification__icon"></i>
-              Work
-            </div>
           </div>
-
-          <div class="qualification__sections">
-            <!--Qualification Content 1-->
-            <div class="qualification__content">
               <!--qualifiction 1-->
-              <div class="qualification__data">
+              <div class="qualification__data" data-content id="work">
                 <div></div>
 
                 <div>
@@ -291,7 +293,7 @@
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <h3 class="qualification__title">Bachelor of Arts</h3>
                   <span class="qualification__subtitle"
                     >University of Minnesota-Twin Cities</span
                   >
@@ -312,13 +314,13 @@
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">Computer Engineer</h3>
-                  <span class="qualification__subtitle"
-                    >University of Minnesota-Twin Cities</span
-                  >
+                  <h3 class="qualification__title">
+                    Introduction to Coding Certificate
+                  </h3>
+                  <span class="qualification__subtitle">SheCodes</span>
                   <div class="qualification__calendar">
                     <i class="bx bxs-calendar"></i>
-                    2017-2020
+                    June 2021- July 2021
                   </div>
                 </div>
               </div>
@@ -333,13 +335,15 @@
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <h3 class="qualification__title">
+                    Web Development Bootcamp 2022
+                  </h3>
                   <span class="qualification__subtitle"
-                    >University of Minnesota-Twin Cities</span
+                    >Udemy Course by Colt Steele</span
                   >
                   <div class="qualification__calendar">
                     <i class="bx bxs-calendar"></i>
-                    2017-2020
+                    September 2021- January 2022
                   </div>
                 </div>
               </div>
@@ -348,48 +352,104 @@
         </div>
       </section>
 
-      <!-- Work  -->
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
+      <!--Portfolio-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
 
-        <div class="work__container bd-grid">
-          <a href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work2.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work3.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work4.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work5.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
-          </a>
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--Portfolio 1-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="IMG/145755.jpeg" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Album Shuffler</h3>
+                <p class="portfolio__description">
+                  JS programmed image shuffler with bright colors.
+                </p>
+                <a
+                  href="Demos/Music Album/index.html"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="bx bx-right-arrow-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--Portfolio 2-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="IMG/coffee.jpg" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Creative Site</h3>
+                <p class="portfolio__description">
+                  Bright modern site to display your work.
+                </p>
+                <a
+                  href="Demos/gurlysnowboarder/gsnow.html"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="bx bx-right-arrow-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--Portfolio 3-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="IMG/computer-at-coffee-shop.jpeg" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Weather App</h3>
+                <p class="portfolio__description">
+                  Simple weather app that changes with JS input.
+                </p>
+                <a
+                  href="Demos/Simple Weather App/index.html"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="bx bx-right-arrow-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Swiper Arrows-->
+          <div class="swiper-button-next">
+            <i class="bx bx-chevron-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="bx bx-chevron-left swiper-portfolio-icon"></i>
+          </div>
+
+          <!--Add Pagination -->
+          <div class="class swiper-pagination"></div>
         </div>
       </section>
 
       <!-- Contact -->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
+        <span class="section__subtitle">Reach Out</span>
 
-        <div class="contact__container bd-grid">
+        <div class="contact__container container grid">
           <form action="" class="contact__form">
             <input type="text" placeholder="Name" class="contact__input" />
             <input type="mail" placeholder="Email" class="contact__input" />
             <textarea
               name=""
               id=""
+              placeholder="Message"
               cols="0"
               rows="10"
               class="contact__input"
             ></textarea>
-            <input type="button" value="Send" class="contact__button button" />
+            <a href="mailto:ka1523@icloud.com" class="button button--flex">
+              Send Message <i class="bx bx-send button__icon"></i
+            ></a>
           </form>
         </div>
       </section>
@@ -397,19 +457,25 @@
 
     <!-- footer -->
     <footer class="footer">
-      <p class="footer__title">Mae</p>
-      <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      <div class="footer__bg">
+        <p class="footer__title">Thank You</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/kayla-m-anderson/" class="footer__icon"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://codepen.io/mae-cloud" class="footer__icon"><i class="bx bxl-codepen"></i></a>
+          <a href="https://github.com/mae-cloud" class="footer__icon"><i class="bx bxl-github"></i></a>
+        </div>
+        <p class="footer__copy">coded by: Mae Anderson :)</p>
       </div>
-      <p class="footer__copy">:)</p>
     </footer>
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!--Swiper JS-->
+    <script src="JS/swiper-bundle.min"></script>
+
     <!-- main js -->
     <script src="JS/main.js"></script>
   </body>
 </html>
+
