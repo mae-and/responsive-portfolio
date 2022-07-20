@@ -1,22 +1,34 @@
 /* GOOGLE FONT */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/* variables dark theme */
+body.dark-theme {
+  --first-color-second: hsl(var(--hue-color), 97%, 11%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color-two), 97%, 11%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
 /* VARIABLES CSS */
 :root {
   --header-height: 3rem;
 
   /* Colors */
   /* Change favorite color */
-  --hue-color: 125; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
+  --hue-color: 347; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color-two: 175;
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 25%, 54%);
-  --first-color-second: hsl(var(--hue-color), 74%, 50%);
-  --first-color-alt: hsl(var(--hue-color), 52%, 28%);
-  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color-light: hsl(var(--hue-color), 8%, 55%);
+  --first-color: hsl(var(--hue-color), 100%, 76%);
+  --first-color-second: hsl(var(--hue-color), 24%, 100%);
+  --first-color-alt: hsl(var(--hue-color), 100%, 62%);
+  --first-color-lighter: hsl(var(--hue-color), 50%, 85%);
+  --title-color: hsl(var(--hue-color), 68%, 35%);
+  --text-color: hsl(var(--hue-color), 58%, 75%);
+  --text-color-light: hsl(var(--hue-color), 78%, 55%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 0%, 100%);
   --container-color: #fff;
@@ -66,18 +78,6 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
-}
-
-/* variables dark theme */
-body.dark-theme {
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
-  --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color: hsl(var(--hue-color), 29%, 16%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
 /* button dark/light */
@@ -172,7 +172,7 @@ button {
 
 /* layout */
 .container {
-  max-width: 768px;
+  max-width: 700px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -386,6 +386,8 @@ button {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  width: 126px;
+  height: 70px;
 }
 
 .button:hover {
@@ -402,6 +404,7 @@ button {
   display: inline-flex;
   align-items: center;
   margin-top: var(--mb-2);
+  text-align: center;
 }
 
 /* About */
@@ -503,37 +506,7 @@ button {
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage {
-  height: 5px;
-  border-radius: 0.25rem;
-}
-
-.skills__bar {
-  background-color: var(--first-color-lighter);
-}
-
-.skills__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-.skills__html {
-  width: 65%;
-}
-
-.skills__css {
-  width: 75%;
-}
-
-.skills__js {
-  width: 35%;
-}
-
-.skills__ruby {
-  width: 15%;
+  align-content: center;
 }
 
 .skills__close .skills__list {
@@ -592,12 +565,13 @@ button {
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0);
 }
 
 .qualification__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  margin-bottom: var(--mb-1-5);
 }
 
 .qualification__rounder {
@@ -645,9 +619,9 @@ button {
 }
 
 .portfolio__button {
-  width: 10px;
+  width: 8px;
   text-align: center;
-  height: 60px;
+  height: 80px;
 }
 
 .portfolio__button:hover .button__icon {
@@ -712,7 +686,7 @@ button {
 
 /* Contact */
 .contact__container {
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .contact__information {
@@ -732,8 +706,8 @@ button {
   outline: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
-  width: 200px;
-  margin: 1rem 1rem 2.5rem 10rem;
+  width: 170px;
+  margin: auto;
 }
 
 .contact__content {
@@ -975,7 +949,7 @@ button {
 }
 
 /* for large devices */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   .header,
   .main,
   .footer__container {
@@ -988,10 +962,6 @@ button {
 
   .home__social {
     transform: translateX(-6rem);
-  }
-
-  .contact__form {
-    width: 800px;
   }
 
   .contact__inputs {
