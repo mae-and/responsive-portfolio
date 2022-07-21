@@ -83,9 +83,10 @@ themeButton.addEventListener("click", () => {
 });
 
 /* Portfolio Swiper */
-let swiper = new Swiper(".swiper-container", {
+let swiper = new Swiper(".swiper", {
   cssMode: false,
   loop: true,
+  direction: 'vertical'
 
   navigation: {
     nextEl: ".swiper-button-next",
