@@ -83,7 +83,7 @@ themeButton.addEventListener("click", () => {
 });
 
 /* Portfolio Swiper */
-let swiper = new Swiper(".portfolio__container", {
+let swiper = new Swiper(".swiper-container", {
   cssMode: false,
   loop: true,
 
