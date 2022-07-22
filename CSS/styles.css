@@ -595,7 +595,7 @@ button {
 }
 
 /* Portfolio */
-.portfolio__container {
+.swiper {
   overflow: initial;
 }
 
@@ -627,6 +627,7 @@ button {
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: "";

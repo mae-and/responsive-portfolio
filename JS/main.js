@@ -83,21 +83,18 @@ themeButton.addEventListener("click", () => {
 });
 
 /* Portfolio Swiper */
-let swiper = new Swiper(".swiper", {
-  cssMode: false,
-  loop: true,
-  direction: 'vertical'
-
+let swiper = new Swiper(".portfolio__container", {
+  cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
   },
+  mousewheel: true,
+  keyboard: true,
 });
-
 /* scroll sections active link */
 const sections = document.querySelectorAll("section[id]");
 
