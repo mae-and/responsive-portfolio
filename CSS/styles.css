@@ -978,14 +978,6 @@ button {
       grid-template-columns: 0.5fr;
     }
 
-    .portfolio__img {
-      width: 320px;
-    }
-
-    .portfolio__content {
-      align-items: center;
-    }
-
     .footer__container {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -1043,14 +1035,6 @@ button {
 
     .swiper-container-horizontal > .swiper-pagination-bullets {
       bottom: -4.5rem;
-    }
-
-    .contact__form {
-      width: 460px;
-    }
-
-    .contact__inputs {
-      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
