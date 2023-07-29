@@ -341,7 +341,7 @@ button {
 }
 
 .home__subtitle {
-  font-size: var(--h3-font-size);
+  font-size: var(--small-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
@@ -604,9 +604,9 @@ button {
   overflow: initial;
 }
 
-.portfolio__content {
+/* .portfolio__content {
   padding: 0 1.5rem;
-}
+} */
 
 .portfolio__img {
   width: 265px;
