@@ -11,9 +11,6 @@
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
 
-    <!--Swiper CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
     <title>Mae</title>
   </head>
   <body>
@@ -124,7 +121,7 @@
                     class="home__blob-img"
                     x="1"
                     y="2"
-                    href="Photo/me.png"
+                    href="Photo/IMG_0170.png"
                   />
                 </g>
               </svg>
@@ -373,15 +370,13 @@
         </div>
       </section>
 
-      <!--Portfolio-->
+    <!--Portfolio-->
       <section class="portfolio section" id="portfolio">
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Some of my work</span>
-
-        <div class="portfolio__container container swiper">
-          <div class="swiper-wrapper">
+        <div class="portfolio__container container">
             <!--Portfolio 1-->
-            <div class="portfolio__content grid swiper-slide">
+            <div class="portfolio__content">
               <img src="IMG/145755.jpeg" alt="" class="portfolio__img" />
 
               <div class="portfolio__data">
@@ -401,7 +396,7 @@
               </div>
             </div>
             <!--Portfolio 2-->
-            <div class="portfolio__content grid swiper-slide">
+            <div class="portfolio__content">
               <img src="IMG/coffee.jpg" alt="" class="portfolio__img" />
 
               <div class="portfolio__data">
@@ -421,7 +416,7 @@
               </div>
             </div>
             <!--Portfolio 3-->
-            <div class="portfolio__content grid swiper-slide">
+            <div class="portfolio__content">
               <img src="IMG/computer-at-coffee-shop.jpeg" alt="" class="portfolio__img" />
 
               <div class="portfolio__data">
@@ -440,21 +435,33 @@
                 </a>
               </div>
             </div>
-          </div>
-          <!--Swiper Arrows-->
-          <div class="swiper-button-next">
-            <i class="bx bx-chevron-right swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="bx bx-chevron-left swiper-portfolio-icon"></i>
-          </div>
+            <!--Portfolio 4-->
+            <div class="portfolio__content">
+              <img src="IMG/coffee.jpg" alt="" class="portfolio__img" />
 
-          <!--Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Other Work:</h3>
+                <p class="portfolio__description">
+                  soon to be posted 
+                </p>
+                
+                <a
+                  href=""
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <3
+                  <i class="button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
       </section>
 
-      <!-- Contact -->
+
+
+    
+     <!-- <-- Contact --> 
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
         <span class="section__subtitle">Reach Out</span>
@@ -473,13 +480,11 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__bg">
-        <p class="footer__title">Thank You</p>
         <div class="footer__social">
           <a href="https://www.linkedin.com/in/kayla-m-anderson/" class="footer__icon"><i class="bx bxl-linkedin"></i></a>
           <a href="https://codepen.io/mae-cloud" class="footer__icon"><i class="bx bxl-codepen"></i></a>
           <a href="https://github.com/mae-cloud" class="footer__icon"><i class="bx bxl-github"></i></a>
         </div>
-        <p class="footer__copy">coded by: Mae Anderson :)</p>
       </div>
     </footer>
 
@@ -496,4 +501,5 @@
     <script src="JS/main.js"></script>
   </body>
 </html>
+
 
