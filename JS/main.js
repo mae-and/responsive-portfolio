@@ -119,4 +119,10 @@ function scrollActive() {
   });
 }
 
-window.addEventListener("scroll", scrollActive);
+window.addEventListener("scroll", function () {
+  const scrollValue = window.scrollY;
+  const parallaxImage = document.querySelector(".parallax-image");
+  parallaxImage.style.transform = `translateY(-${scrollValue * 0.5}px)`; // Adjust the multiplier for the desired effect
+});
+
+/*window.addEventListener("scroll", scrollActive);*/

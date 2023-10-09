@@ -27,7 +27,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /* Font and typography */
-  --body-font: "Lumanosimo", georgia;
+  --body-font: "Amatic SC", georgia;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
   --big-font-size: 2rem;
@@ -133,7 +133,7 @@ input {
 
 body {
   margin: var(--header-height) 0 0 0;
-  /*background-color: var(--body-color);*/
+  background-color: var(--body-color);
   color: var(--text-color);
   transition: 0.4s;
 }
